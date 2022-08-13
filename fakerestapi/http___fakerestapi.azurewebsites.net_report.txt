@@ -1,0 +1,44 @@
+API: GET /api/v1/Authors
+ Test Case 1 : response should be 200 OK
+ Expected Result: 200 OK
+ Actual Result: 200 OK
+ Status: Pass
+Test Case 2 : Objects inside response contain, id,
+ Expected Result: object contain id
+ Actual Result: object contain id
+ Status: Pass
+--------------------------------------------------------------
+API : Post /api/v1/Authors
+Test Case 1 : status should be OK
+ Expected Result: OK
+ Actual Result: OK
+ Status: Pass
+Test Case 2 : Objects inside response contain, idBook eql 5
+ Expected Result: object contain idBook eql 5
+ Actual Result: object contain idBook eql 5
+ Status: Pass
+----------------------------------------------------------------
+API : GET /api/v1/Authors/authors/books/{idBook}
+Test Case 1 : check idBook equal idBook in objects
+expected result : idBook eql 5
+Actual result : idBook eql5
+Status : pass
+---------------------------------------------------------------
+API : GET /api/v1/Authors/{id}
+Test Case 1: check if id added in path param equal id in response
+expected result : path param id equal id in respons
+Actual result : path param id equal id in respons
+Status : pass
+----------------------------------------------------------------
+API : PUT /api/v1/Authors/{id}
+Test Case 1 : response should be 200 OK
+ Expected Result: 200 OK
+ Actual Result: 200 OK
+ Status: Pass
+----------------------------------------------------------------
+API : DELETE /api/v1/Authors/{id}
+Test Case 1 : status should be OK
+ Expected Result: OK
+ Actual Result: OK
+Status : pass
+
