@@ -1,0 +1,45 @@
+Try First Trello API :
+"boards": [
+        {
+            "id": "62f7e8d86ec46600dfd95bf3",
+            "name": "TrelloApiTest",
+            "closed": false,
+            "idOrganization": "61ccacc44c8b192863bc8c88",
+            "pinned": false
+        },
+        {
+            "id": "62f7ea1a928f380063b0bad5",
+            "name": "TrelloApiTest",
+            "closed": false,
+            "idOrganization": "61ccacc44c8b192863bc8c88",
+            "pinned": false
+        },
+        {
+            "id": "62f7f426b60af9001f81216a",
+            "name": "TrelloApiTest",
+            "closed": false,
+            "idOrganization": "61ccacc44c8b192863bc8c88",
+            "pinned": false
+        },
+        {
+            "id": "62f804463f7d990018b5beac",
+            "name": "TrelloApiTest",
+            "closed": false,
+            "idOrganization": "61ccacc44c8b192863bc8c88",
+            "pinned": false
+        },
+        {
+            "id": "62f80447635d5a007eb540fe",
+            "name": "TrelloApiTest",
+            "closed": false,
+            "idOrganization": "61ccacc44c8b192863bc8c88",
+            "pinned": false
+        },
+        {
+            "id": "62f8044b199b75001814d8c4",
+            "name": "TrelloApiTest",
+            "closed": false,
+            "idOrganization": "61ccacc44c8b192863bc8c88",
+            "pinned": false
+        }
+    ]

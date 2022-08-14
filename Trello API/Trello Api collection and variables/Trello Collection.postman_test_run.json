@@ -1,0 +1,252 @@
+{
+	"id": "fb5b63b1-c7ac-4ec4-b13e-bccfd7caa588",
+	"name": "Trello Collection",
+	"timestamp": "2022-08-13T21:11:44.098Z",
+	"collection_id": "19395583-0f7c950b-492a-4270-8d95-4a885307f5b6",
+	"folder_id": 0,
+	"environment_id": "19395583-0ec53fd6-1496-4238-b445-ca409e6f97e9",
+	"totalPass": 15,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "a80e3616-78ca-4329-a928-d9dd0fd047c8",
+			"name": "Create New Board",
+			"url": "https://api.trello.com/1/boards/?name=TrelloApiTest&key=45b9de68a2a233675b70fdc40976119e&token=d99f5e5a19c1d4e38756bdc1bafb3cec2f1fed1fb33149e113babd78068ea66c",
+			"time": 827,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"permissionLevel Value Is Private": true,
+				"CanBePublic is true": true,
+				"canInvite Value is true": true
+			},
+			"testPassFailCounts": {
+				"permissionLevel Value Is Private": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CanBePublic is true": {
+					"pass": 1,
+					"fail": 0
+				},
+				"canInvite Value is true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				827
+			],
+			"allTests": [
+				{
+					"permissionLevel Value Is Private": true,
+					"CanBePublic is true": true,
+					"canInvite Value is true": true
+				}
+			]
+		},
+		{
+			"id": "b897b56b-eeb9-4f16-be49-c33de5687f07",
+			"name": "GET My API Board",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=45b9de68a2a233675b70fdc40976119e&token=d99f5e5a19c1d4e38756bdc1bafb3cec2f1fed1fb33149e113babd78068ea66c",
+			"time": 278,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"number of boards above 1": true
+			},
+			"testPassFailCounts": {
+				"number of boards above 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				278
+			],
+			"allTests": [
+				{
+					"number of boards above 1": true
+				}
+			]
+		},
+		{
+			"id": "6b6c0ca8-aa2b-472b-ac99-d97aaa94f10e",
+			"name": "Delete Board",
+			"url": "https://api.trello.com/1/boards/62f813a8c6431d00609732cf?key=45b9de68a2a233675b70fdc40976119e&token=d99f5e5a19c1d4e38756bdc1bafb3cec2f1fed1fb33149e113babd78068ea66c",
+			"time": 823,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response Body should contain a meaningful message": false,
+				"_value is null": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Body should contain a meaningful message": {
+					"pass": 0,
+					"fail": 1
+				},
+				"_value is null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				823
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response Body should contain a meaningful message": false,
+					"_value is null": true
+				}
+			]
+		},
+		{
+			"id": "60dfca90-ee35-4f49-aeec-592bb21171e9",
+			"name": "Create New List",
+			"url": "https://api.trello.com/1/lists?name=new%20list&idBoard=62f80447635d5a007eb540fe&key=45b9de68a2a233675b70fdc40976119e&token=d99f5e5a19c1d4e38756bdc1bafb3cec2f1fed1fb33149e113babd78068ea66c",
+			"time": 370,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"confirm id key is founded": true,
+				"closed Value is False": true,
+				"limits is empty object": true
+			},
+			"testPassFailCounts": {
+				"confirm id key is founded": {
+					"pass": 1,
+					"fail": 0
+				},
+				"closed Value is False": {
+					"pass": 1,
+					"fail": 0
+				},
+				"limits is empty object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				370
+			],
+			"allTests": [
+				{
+					"confirm id key is founded": true,
+					"closed Value is False": true,
+					"limits is empty object": true
+				}
+			]
+		},
+		{
+			"id": "36e98c9e-ef3d-4d1b-80a0-0f62809a8871",
+			"name": "Get Lists on a Board",
+			"url": "https://api.trello.com/1/boards/62f7e8d86ec46600dfd95bf3/lists?key=45b9de68a2a233675b70fdc40976119e&token=d99f5e5a19c1d4e38756bdc1bafb3cec2f1fed1fb33149e113babd78068ea66c",
+			"time": 241,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Number of lists is 3": true
+			},
+			"testPassFailCounts": {
+				"Number of lists is 3": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				241
+			],
+			"allTests": [
+				{
+					"Number of lists is 3": true
+				}
+			]
+		},
+		{
+			"id": "952287f3-cebd-42fb-ab4d-94006fc800ab",
+			"name": "Archive or un-archive a list",
+			"url": "https://api.trello.com/1/lists/62f7e8d86ec46600dfd95bfc/closed?key=45b9de68a2a233675b70fdc40976119e&token=d99f5e5a19c1d4e38756bdc1bafb3cec2f1fed1fb33149e113babd78068ea66c&value=false",
+			"time": 242,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"if closed is false value is false and vice vers": true,
+				"header include key Set-Cookie with value contains isEnterpriseAdmin%3Dfalse": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"if closed is false value is false and vice vers": {
+					"pass": 1,
+					"fail": 0
+				},
+				"header include key Set-Cookie with value contains isEnterpriseAdmin%3Dfalse": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				242
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"if closed is false value is false and vice vers": true,
+					"header include key Set-Cookie with value contains isEnterpriseAdmin%3Dfalse": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2781,
+	"collection": {
+		"requests": [
+			{
+				"id": "a80e3616-78ca-4329-a928-d9dd0fd047c8",
+				"method": "POST"
+			},
+			{
+				"id": "b897b56b-eeb9-4f16-be49-c33de5687f07",
+				"method": "GET"
+			},
+			{
+				"id": "6b6c0ca8-aa2b-472b-ac99-d97aaa94f10e",
+				"method": "DELETE"
+			},
+			{
+				"id": "60dfca90-ee35-4f49-aeec-592bb21171e9",
+				"method": "POST"
+			},
+			{
+				"id": "36e98c9e-ef3d-4d1b-80a0-0f62809a8871",
+				"method": "GET"
+			},
+			{
+				"id": "952287f3-cebd-42fb-ab4d-94006fc800ab",
+				"method": "PUT"
+			}
+		]
+	}
+}
